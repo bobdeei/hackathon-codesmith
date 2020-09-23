@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Our Project",
+  "version": "1.0",
+  "description:": "",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["./main.js"]
+    }
+  ]
+}
