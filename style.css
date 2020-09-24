@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+span {
+  color: black;
+}
+
+button {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  transition: 0.5s ease filter;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+button#start {
+  background-color: greenyellow;
+}
+
+button#stop {
+  background-color: crimson;
+}
+
+button#reset {
+  background-color: lightgray;
+  color: black;
+}
+
+button#toggleHidden {
+  color: black;
+}
+
+.time {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.my-container {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.clock {
+  padding: 0 2rem;
+}

@@ -2,11 +2,15 @@
   "manifest_version": 2,
   "name": "Our Project",
   "version": "1.0",
-  "description:": "",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["./main.js"]
+      "matches": ["*://*/*"],
+      "js": ["main.js"]
     }
-  ]
+  ],
+  "permissions": ["tabs", "*://*/*"],
+  "web_accessible_resources": ["style.css", "work.mp3", "break.mp3"]
 }
